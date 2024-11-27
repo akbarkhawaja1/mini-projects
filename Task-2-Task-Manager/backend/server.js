@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5001;
 const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://zephyrusAdmin:kGdMN9WhDPGUU2Bu@zephyruscluster.1ug59.mongodb.net/';
 
 const connectDB = async () => {
@@ -33,10 +33,10 @@ const Task = mongoose.model('Task', taskSchema);
 
 app.get('/tasks', async (req,res) => {
 	try {
-		const tasks = await Task.find()
+		const tasks = await Task.find().sort({dueDate: -1 })
 
 		if(tasks.length === 0) {
-		 return	res.send('No Tasks In Database')
+		 return	res.send([])
 		}
 
 		res.json(tasks)
@@ -53,7 +53,7 @@ app.post('/tasks', async (req, res) => {
 		const task = new Task({title, description, dueDate});
 		await task.save()
 
-		res.json({message: 'Task added'})
+		res.json(task)
 	}
 	catch(error){
 		res.status(400).json({error: 'Failed creating tasks'})
