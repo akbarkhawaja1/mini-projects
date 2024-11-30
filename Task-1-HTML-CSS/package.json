@@ -1,0 +1,17 @@
+{
+  "name": "task-1-advanced-html-css",
+  "version": "1.0.0",
+  "description": "A responsive webpage with an interactive dark mode toggle.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "test": "jest"
+  },
+  "author": "Akbar Khawaja",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-puppeteer": "^10.1.4",
+    "live-server": "^1.2.2",
+    "puppeteer": "^23.9.0"
+  }
+}
