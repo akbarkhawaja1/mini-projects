@@ -16,13 +16,16 @@ const TaskEdit = () => {
 					const formattedDate = new Date(taskToEdit.dueDate).toISOString().split("T")[0]
 					setTask({...taskToEdit, dueDate: formattedDate })
 				}
+				else{
+					navigate('/')
+				}
 			}
 			catch(error){
 				console.error('Error fetching task:', error)
 			}
 		}
 		fetchTask()
-	},[id])
+	},[id, navigate])
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
