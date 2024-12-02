@@ -10,8 +10,6 @@ This repository contains the solution for the Zephyrus Engineering Limited codin
 
 Each task is located in its own subdirectoy. Each task has its own README with instructions.
 
---
-
 ## Tasks Overview
 
 ### Task 1: Advanced HTML & CSS Layout
@@ -24,8 +22,6 @@ Develop a interactive task managment system that includes both front-end and bac
 
 ### Task 3: Real-Time Data Fetching and Display
 Build a component that fetches and displays data from an external API. Display the data in a structured format and implement error handling. Optionally, allow users to interact with the data through search or filtering functionalities. 
-
---
 
 ## How To Run
 
@@ -40,8 +36,6 @@ Build a component that fetches and displays data from an external API. Display t
 	- For **Task 3**: `cd task-3-api-fetching`
 
 3. **Follow the setup instructions** in the respective task's README file. Each task has its own setup and running instructions.
-
---
 
 ## Technologies Used:
 
