@@ -1,6 +1,6 @@
-# zephyrus-coding-challenge 
+# mini-projects
 
-This repository contains the solution for the Zephyrus Engineering Limited coding challenge, which is divided into three tasks. 
+This repository contains my mini project divided into three tasks. 
 
 1. **[Task 1: Advanced HTML & CSS Layout](./Task-1-HTML-CSS/README.md)** 
 
